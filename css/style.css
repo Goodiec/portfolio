@@ -43,14 +43,14 @@
 } */
 
 
-body {
+body, html {
     background: var(--clr-dark);
     color: var(--clr-light);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 section {
@@ -376,7 +376,7 @@ header {
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
