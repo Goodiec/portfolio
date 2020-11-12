@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Goodness Chris-Ugari's Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">   
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <a href="index.html">Goodiec</a>
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <div class="intro-text">
+                <h1 class="section__title section__title--intro">
+                    Hi, I am <strong>Goodness Chris-Ugari</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">Frontend Developer &amp; Technical Writer</p>
+            </div>
+        </section>
+        
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Front Web Development</h3>
+                    <p>
+                        Building interactive mobile first web applications.
+                    </p>
+                    <p><strong>Technologies -</strong> HTML, CSS, JavaScript, React JS, Bootstrap, JQuery</p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>Technical Writing</h3>
+                    <p>
+                        I write and improve documentations. I write and publish technical articles on Medium & Hashnode.
+                    </p>
+                </div> <!-- / service -->
+                
+                <div class="service">
+                    <h3>UI/UX Design</h3>
+                    <p>
+                        I create website designs using Figma.
+                    </p>
+                </div> <!-- / service -->
+            </div> <!-- / services -->
+            
+            <a href="#projects" class="btn">Projects</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Frontend Developer & Technical Writer</p>
+           
+           <div class="about-me__body">
+               <p>I am a frontend developer based in Abuja, Nigeria. I'm passionate about self development, this pushes me to keep learning and trying to improve the way I do things. 
+                   I work mainly on the client-side of web applications ensuring I make these applications accessible to all. I enjoy learning, coding designs to live and I also 
+                   enjoy contributing to open source projects. When I am not coding, you can find me reading a book &#128215;, baking &#127861; and oh learning a new language &#128517;.
+               </p>
+           </div>
+           
+           <img src="img/about-img2.jpg" alt="Jane leaning against a bus" class="about-me__img">
+        </section>
+        
+        <!-- projects -->
+        <section class="my-work" id="projects">
+            <h2 class="section__title section__title--work">Projects</h2>
+            <p class="section__subtitle section__subtitle--work">Some of my recent projects</p>
+            
+            <div class="portfolio">
+
+                <div class="card">
+                    <div class="card-header">
+                        <img src="img/p2.png" alt="Project image" class="portfolio__img">
+                    </div>
+                    <div class="card-main">
+                        <h4 class="port-name">Real Estate Website</h4>
+                        <p class="port-desc">HTMl, CSS, Bootstrap, JavaScript</p>
+                        <a href="https://columba-real-estate.netlify.app" class="portfolio__item">Check it Out</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="img/p1.png" alt="Project image" class="portfolio__img">
+                    </div>
+                    <div class="card-main">
+                      <h4 class="port-name">Start-up Portfolio Website</h4>
+                      <div class="port-desc">HTMl, CSS, Bootstrap, JavaScript</div>
+                      <a href="https://portfolio-team-template-1.netlify.app" class="portfolio__item">Check it Out</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="img/p3.png" alt="Project image" class="portfolio__img">
+                    </div>
+                    <div class="card-main">
+                      <h4 class="port-name">Simple  Fitness Chatbot</h4>
+                      <div class="port-desc">HTMl, CSS, JavaScript</div>
+                      <a href="https://fit.netlify.app" class="portfolio__item">Check it Out</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <img src="img/p4.png" alt="Project image" class="portfolio__img">
+                    </div>
+                    <div class="card-main">
+                      <h4 class="port-name">Face Detection App</h4>
+                      <div class="port-desc">HTMl, CSS, React JS, Node JS, Express, MongoDB</div>
+                      <a href="https://smart-brain-spot.herokuapp.com" class="portfolio__item">Check it Out</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:goodnesschrisugari@gmail.com" class="footer__link">goodnesschrisugari@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/goodiec">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/goodness-chris-ugari/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com/Goodie161">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                    <li class="social-list__item">
+                    <a class="social-list__link" href="https://medium.com/@goodnesschrisugari">
+                        <i class="fab fa-medium"></i>                   
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
