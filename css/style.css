@@ -9,19 +9,19 @@
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
-    
+
     --fw-reg: 300;
     --fw-bold: 900;
-    
+
     --clr-light: #fff;
     --clr-dark: #000;
     --clr-accent: #16e0bd;
-    
+
     --fs-h1: 2.5rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
-    
+
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
@@ -159,7 +159,7 @@ header {
     left: 0;
     right: 0;
     z-index: 100;
-    
+
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
 }
@@ -310,7 +310,7 @@ header {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .service + .service {
         margin-left: 2em;
     }
@@ -330,17 +330,17 @@ header {
     .about-me {
         display: grid;
         grid-template-columns: 1fr 200px;
-        grid-template-areas: 
+        grid-template-areas:
             "title img"
             "subtitle img"
             "text img";
         grid-column-gap: 2em;
     }
-    
+
     .section__title--about {
         grid-area: title;
     }
-    
+
     .section__subtitle--about {
         grid-column: 1 / -1;
         grid-row: 2;
@@ -349,8 +349,10 @@ header {
         width: calc(100% + 2em);
         padding-left: 1em;
         padding-right: calc(200px + 4em);
+        color: var(--clr-dark);
+        font-weight: var(--fw-bold);
     }
-    
+
     .about-me__img {
         grid-area: img;
         position: relative;
@@ -360,9 +362,9 @@ header {
 
 /* My Work */
 .card {
-    border: 2px solid var(--clr-light); 
-    border-radius: 4px;          
-    overflow: hidden;           
+    border: 2px solid var(--clr-light);
+    border-radius: 4px;
+    overflow: hidden;
   }
 .card-main{
     padding: 5px;
@@ -372,7 +374,10 @@ header {
     color: var(--clr-light);
     /* text-align: center;     */
 }
-
+p.port-name{
+    font-size: 22px;
+    font-style: var(--fw-bold);
+}
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
@@ -392,7 +397,7 @@ header {
 }
 
 .portfolio__img {
-    transition: 
+    transition:
         transform 750ms cubic-bezier(.5, 0, .5, 1),
         opacity 250ms linear;
 }
@@ -420,7 +425,7 @@ header {
 
 }
 
-.footer a { 
+.footer a {
     color: inherit;
     text-decoration: none;
 }
